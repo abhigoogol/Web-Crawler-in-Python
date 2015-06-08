@@ -11,7 +11,7 @@ def store_links(seed):
 		if page not in crawled:
 			new_links = get_all_links(page)
 			
-			# Making pop() measns we are taking last link first i.e. Depth First Search
+			# Making pop() means we are taking last link first i.e. Depth First Search
 			crawled.append(tocrawl.pop())
 			for x in new_links:
 				tocrawl.append(x)
